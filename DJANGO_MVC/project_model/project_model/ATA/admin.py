@@ -47,6 +47,6 @@ class Mentor(admin.ModelAdmin):
 # admin.site.register(Live_Code)
 @admin.register(Live_Code)
 class Live_Code(admin.ModelAdmin):
-    list_display = ('id','nama_live_code', 'banyak_soal', 'bobot_nilai','tanggal_pelaksanaan')
+    list_display = ('id','nama_live_code', 'banyak_soal', 'bobot_nilai','tanggal_pelaksanaan','mata_pelajaran')
     ordering = ('id',)
     search_fields = ('nama_live_code', 'banyak_soal')
